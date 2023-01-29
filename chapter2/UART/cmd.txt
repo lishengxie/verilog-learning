@@ -1,0 +1,7 @@
+iverilog -o uart_tx uart_tx_tb.v uart_tx.v
+vvp -n uart_tx -lxt2
+gtkwave
+
+iverilog -o uart_rx uart_rx_tb.v uart_rx.v
+vvp -n uart_rx -lxt2
+gtkwave
