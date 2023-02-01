@@ -21,7 +21,7 @@ module uart_rx_tb;
     always #(`CLK_PERIOD/2) clk = ~clk;
 
     initial begin
-        clk = 0;
+        clk = 1;
         rst_n = 0;
         uart_rx = 1;
         uart_test_data = 8'b01101001;

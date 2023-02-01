@@ -15,7 +15,7 @@ module counter1_tb;
     always #(`CLK_PERIOD/2) clk = ~clk;
 
     initial begin
-        clk = 0;
+        clk = 1;
         rst_n = 0;
         en = 1;
 

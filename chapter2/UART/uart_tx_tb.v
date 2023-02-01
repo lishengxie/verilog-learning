@@ -18,7 +18,7 @@ module uart_tx_tb;
     always #(`CLK_PERIOD/2) clk = ~clk;
 
     initial begin
-        clk = 0;
+        clk = 1;
         rst_n = 0;
         tx_vld = 0;
         tx_data = 0;
