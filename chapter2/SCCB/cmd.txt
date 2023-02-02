@@ -1,0 +1,3 @@
+iverilog -o sccb sccb_tb.v sccb_top.v sccb.v
+vvp -n sccb -lxt2
+gtkwave
