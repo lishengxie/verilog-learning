@@ -1,0 +1,11 @@
+"always @(posedge clk or negedge rst_n) begin",
+"\tif(rst_n == 1'b0) begin",
+"\t\tcnt <= 0;",
+"\tend",
+"\telse if (add_cnt)begin",
+"\t\tif (end_cnt)",
+"\t\t\tcnt <= 0;",
+"\t\telse",
+"\t\t\tcnt <= cnt + 1;",
+"\tend",
+"end"
